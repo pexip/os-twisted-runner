@@ -1,0 +1,29 @@
+Source: twisted-runner
+Section: python
+Priority: optional
+Maintainer: Matthias Klose <doko@debian.org>
+Uploaders: Free Ekanayaka <freee@debian.org>
+Build-Depends: debhelper (>= 5.0.37.1), python-all-dev (>= 2.6.5-9~), python-all-dbg, python-twisted-core (>= 11.1), patch
+XS-Python-Version: >= 2.6
+Standards-Version: 3.9.2
+
+Package: python-twisted-runner
+Architecture: any
+Depends: ${python:Depends}, python-twisted-core (>= 11.1), ${shlibs:Depends}, ${misc:Depends}
+Conflicts: python2.3-twisted-runner, python2.4-twisted-runner, python2.3-twisted-bin (<< 0.2.0), python2.4-twisted-bin (<< 0.2.0)
+Replaces: python2.3-twisted-runner, python2.4-twisted-runner, python2.3-twisted-bin (<< 0.2.0), python2.4-twisted-bin (<< 0.2.0)
+Provides: ${python:Provides}
+Suggests: python-twisted-runner-dbg
+XB-Python-Version: ${python:Versions}
+Description: Process management, including an inetd server
+ Twisted Runner has process management, including an inetd replacement.
+
+Package: python-twisted-runner-dbg
+Section: debug
+Priority: extra
+Architecture: any
+Depends: python-twisted-runner (= ${binary:Version}), python-dbg, ${shlibs:Depends}, ${misc:Depends}
+Description: Process management, including an inetd server (debug extension)
+ Twisted Runner has process management, including an inetd replacement.
+ .
+ This package contains the extension built for the python debug interpreter.
