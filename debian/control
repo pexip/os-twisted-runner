@@ -1,11 +1,13 @@
 Source: twisted-runner
 Section: python
 Priority: optional
-Maintainer: Matthias Klose <doko@debian.org>
-Uploaders: Free Ekanayaka <freee@debian.org>
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: Matthias Klose <doko@debian.org>
+XSBC-Pexip-Original-Uploaders: Free Ekanayaka <freee@debian.org>
 Build-Depends: debhelper (>= 5.0.37.1), python-all-dev (>= 2.6.5-9~), python-all-dbg, python-twisted-core (>= 11.1), patch
 XS-Python-Version: >= 2.6
 Standards-Version: 3.9.2
+XS-Pexip-Upstream: http://archive.ubuntu.com/ubuntu/ precise
 
 Package: python-twisted-runner
 Architecture: any
